@@ -1,0 +1,34 @@
+void main()
+{
+    int counter = 0; 
+    while (true)
+    {
+        print("Counter: ", counter)
+        print("0. Increment")
+        print("1. Decrement")
+        print("2. Quit")
+
+        int choice;
+        input("enter your choice: ")
+
+        if (choice == 0)
+        {
+            counter++; # Increment the counter
+        }
+        if (choice == 1)
+        {
+            counter--; # Decrement the counter
+        }
+        elseif (choice == 2)
+        {
+            break; # Exit the loop and quit the program
+        }
+        else
+        {
+            print("Invalid choice. Please select 1 to increment or 2 to quit.")
+        }
+    }
+
+    print("Goodbye!")
+
+}
